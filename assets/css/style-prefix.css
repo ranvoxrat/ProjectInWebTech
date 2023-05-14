@@ -840,6 +840,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .banner-content {
+  display: inline-block;
   background: hsla(0, 0%, 100%, 0.8);
   position: absolute;
   bottom: 25px;
@@ -860,15 +861,19 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .banner-title {
-  color: var(--eerie-black);
+  color: white;
   font-size: var(--fs-1);
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 10px;
 }
 
-.banner-text { display: none; }
-
+.banner-text { 
+  display: none;
+ }
+.banner-text p{
+  color: rgb(63, 111, 153);
+}
 .banner-btn {
   background: var(--salmon-pink);
   color: var(--white);
@@ -3102,7 +3107,9 @@ footer {
 
   .product-featured .display-number { --fs-5: 1.125rem; }
 
-  .product-grid { -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); }
+  .product-grid { -ms-grid-columns: (1fr)[4];
+     grid-template-columns: repeat(4, 1fr);
+     }
 
 
 
